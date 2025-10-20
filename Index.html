@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Front-End Development Courses</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #0078ff;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    nav {
+      background-color: #005bb5;
+      display: flex;
+      justify-content: center;
+      padding: 0.8rem 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .course {
+      background: white;
+      margin: 20px 0;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .course:hover {
+      transform: scale(1.02);
+    }
+
+    h2 {
+      color: #0078ff;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background-color: #0078ff;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #0078ff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #005bb5;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Front-End Development Learning Hub</h1>
+    <p>Learn HTML, CSS, JavaScript, and Frameworks to become a professional Front-End Developer.</p>
+  </header>
+
+  <nav>
+    <a href="#html">HTML</a>
+    <a href="#css">CSS</a>
+    <a href="#javascript">JavaScript</a>
+    <a href="#frameworks">Frameworks</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="html">
+    <div class="course">
+      <h2>HTML Basics</h2>
+      <p>HTML (HyperText Markup Language) is the backbone of all websites. Learn to create structure for web pages using tags, links, images, and forms.</p>
+      <a class="btn" href="https://www.w3schools.com/html/" target="_blank">Start Learning HTML</a>
+    </div>
+  </section>
+
+  <section id="css">
+    <div class="course">
+      <h2>CSS Styling</h2>
+      <p>CSS (Cascading Style Sheets) adds style and design to your web pages. Learn to create beautiful layouts, colors, and animations.</p>
+      <a class="btn" href="https://www.w3schools.com/css/" target="_blank">Start Learning CSS</a>
+    </div>
+  </section>
+
+  <section id="javascript">
+    <div class="course">
+      <h2>JavaScript Programming</h2>
+      <p>JavaScript makes your website interactive. Learn how to add dynamic features like menus, animations, and more.</p>
+      <a class="btn" href="https://www.w3schools.com/js/" target="_blank">Start Learning JavaScript</a>
+    </div>
+  </section>
+
+  <section id="frameworks">
+    <div class="course">
+      <h2>Frameworks & Libraries</h2>
+      <p>After mastering the basics, learn popular frameworks like React, Vue, and Angular to build modern, fast, and dynamic web applications.</p>
+      <a class="btn" href="https://react.dev/" target="_blank">Learn React</a>
+      <a class="btn" href="https://vuejs.org/" target="_blank">Learn Vue</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="course">
+      <h2>Contact Us</h2>
+      <p>Have questions or want personalized guidance? Email us at <strong>frontendhub@example.com</strong>.</p>
+      <form onsubmit="return sendMessage(event)">
+        <input type="text" id="name" placeholder="Your Name" required style="padding:10px; width:45%; margin:5px;">
+        <input type="email" id="email" placeholder="Your Email" required style="padding:10px; width:45%; margin:5px;">
+        <textarea id="message" placeholder="Your Message" required style="width:93%; padding:10px; height:100px; margin:5px;"></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Front-End Learning Hub | Designed by You ❤️</p>
+  </footer>
+
+  <script>
+    function sendMessage(event) {
+      event.preventDefault();
+      alert("Thank you for contacting us! We'll reply soon.");
+      document.getElementById('name').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('message').value = '';
+    }
+  </script>
+
+</body>
+</html>
